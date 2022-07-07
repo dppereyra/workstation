@@ -20,7 +20,7 @@ export TERM="xterm-256color"
 
 export ZSH_DISABLE_COMPFIX=true
 
-# export VAGRANT_DEFAULT_PROVIDER=libvirt
+export VAGRANT_DEFAULT_PROVIDER=libvirt
 
 #Adding this temporarily until google sdk is compatible with 3.10
 # export CLOUDSDK_PYTHON=/bin/python2

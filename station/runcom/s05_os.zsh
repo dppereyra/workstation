@@ -16,22 +16,26 @@ then
   if [[ "$STATION_KERNEL" == *wsl2* ]]
   then
     echo "Loading wsl configs ..."
-    export $STATION_RC/system/wsl.zsh
+    source $STATION_RC/system/wsl.zsh
   fi
 
   case "$STATION_DISTRO" in
     *arch*)
       echo "Loading arch specific configs ..."
-      export $STATION_RC/system/distro/arch.zsh
+      source $STATION_RC/system/distro/arch.zsh
+    ;;
     *arcolinux*)
       echo "Loading arch specific configs ..."
-      export $STATION_RC/system/distro/arch.zsh
+      source $STATION_RC/system/distro/arch.zsh
+    ;;
     *debian*)
       echo "Loading debian specific configs ..."
-      export $STATION_RC/system/distro/debian.zsh
+      source $STATION_RC/system/distro/debian.zsh
+    ;;
     *fedora*)
       echo "Loading fedora specific configs ..."
-      export $STATION_RC/system/distro/fedora.zsh
+      source $STATION_RC/system/distro/fedora.zsh
+    ;;
     *)
       echo "No OS specific configs loaded ..."
       ;;

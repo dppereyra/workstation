@@ -14,3 +14,4 @@ export NPM_REGISTRY=
 export NPM_PASSWORD=
 export NPM_USERNAME=
 export NPM_USERMAIL=
+export NPM_TOKEN=
