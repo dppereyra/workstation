@@ -8,6 +8,7 @@
 
 echo "Loading secrets ..."
 
+export RESTIC_REPOSITORY=
 export RESTIC_PASSWORD_FILE=
 
 export NPM_REGISTRY=

@@ -6,8 +6,7 @@
 #
 ##############################################################################
 
-echo "Setting up paths ..."
-
+echo "Setting paths ..."
 
 export PROJECT_HOME=~/projects
 
@@ -45,5 +44,5 @@ export GOPATH=$PROJECT_HOME/go
 export GO_BIN=$GOPATH/bin
 
 export ENV_PATHS=$ASDF_BIN:$PYENV_BIN:$GOENV_BIN:$NODENV_BIN:$RBENV_BIN
-export APP_PATHS=$GO_BIN:$CARGO_BIN:$NPM_BIN:$FLUTTER_BIN:$CONDA_BIN:$GCLOUD_BIN
+export APP_PATHS=$GO_BIN:$CARGO_BIN:$NPM_BIN:$FLUTTER_BIN:$GCLOUD_BIN
 export PATH=$ENV_PATHS:$APP_PATHS:$STATION_SCRIPTS:$LOCAL_BIN:$PATH
