@@ -16,3 +16,7 @@ export NPM_PASSWORD=
 export NPM_USERNAME=
 export NPM_USERMAIL=
 export NPM_TOKEN=
+
+export SNYK_TOKEN=
+
+export KEYS_AUTH=
