@@ -10,7 +10,7 @@ echo "Loading environment variables ..."
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-export EDITOR=subl
+export EDITOR=vim
 
 export HISTFILE=~/station/zsh_history
 export HISTSIZE=1000000
