@@ -6,7 +6,7 @@
 #
 ##############################################################################
 
-echo "Load aliases ..."
+echo "Loading aliases ..."
 
 alias mystation="git --git-dir=$HOME/.station --work-tree=$HOME"
 

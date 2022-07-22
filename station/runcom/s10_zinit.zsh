@@ -6,7 +6,7 @@
 #
 ##############################################################################
 
-echo "Load zinit plugins ..."
+echo "Loading zinit plugins ..."
 
 zinit light-mode for \
     zdharma-continuum/zinit-annex-as-monitor \

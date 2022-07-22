@@ -7,17 +7,17 @@
 ##############################################################################
 
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-    echo "Load vte (tilix) terminal fixes ..."
+    echo "Loading vte (tilix) terminal fixes ..."
     source /etc/profile.d/vte.sh
 fi
 
-echo "Load terminal utilities ..."
+echo "Loading terminal utilities ..."
 source $STATION_HOME/zinit/zinit.zsh
 autoload -Uz compinit
 autoload -Uz _zinit
 compinit -u
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-echo "Load bash compatibility ..."
+echo "Loading bash compatibility ..."
 autoload bashcompinit
 bashcompinit

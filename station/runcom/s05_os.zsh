@@ -6,7 +6,7 @@
 #
 ##############################################################################
 
-echo "Loading os specific functions ..."
+echo "Determining os ..."
 
 STATION_KERNEL=$(uname -a | awk '{print $3}' | tr '[:upper:]' '[:lower:]')
 STATION_DISTRO=$(awk -F= '/^NAME/{print $2}' /etc/os-release | tr '[:upper:]' '[:lower:]')
