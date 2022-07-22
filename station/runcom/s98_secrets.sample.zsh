@@ -20,3 +20,6 @@ export NPM_TOKEN=
 export SNYK_TOKEN=
 
 export KEYS_AUTH=
+
+export CA_FILE=
+export REQUESTS_CA_BUNDLE=
