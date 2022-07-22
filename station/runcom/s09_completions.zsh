@@ -18,9 +18,6 @@ eval "$(register-python-argcomplete pipx)"
 echo "Loading kubectl completions ..."
 source <(kubectl completion zsh)
 
-echo "Loading cloud completions ..."
-source <(doctl completion zsh)
-
 echo "Loading pyenv ..."
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
@@ -38,11 +35,19 @@ eval "$(rbenv init -)"
 echo "Loading npm completions ..."
 source <(npm completion)
 
-echo "Loading Google SDK ..."
+if [ -x "`which doctl`" ]; then
+  echo "Loading cloud completions ..."
+  source <(doctl completion zsh)
+fi
+
+
 if [ -d $STATION_SDK/google-cloud-sdk ]; then
+  echo "Loading Google SDK ..."
   source $STATION_SDK/google-cloud-sdk/path.zsh.inc
   source $STATION_SDK/google-cloud-sdk/completion.zsh.inc
 fi
 
-echo "Loading flutter completions ..."
-source <(flutter zsh-completion)
+if [ -d $FLUTTER_BIN ]; then
+  echo "Loading flutter completions ..."
+  source <(flutter zsh-completion)
+fi
