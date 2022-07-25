@@ -24,5 +24,5 @@ source $STATION_RC/s98_secrets.zsh
 
 source $STATION_RC/s99_theme.zsh
 
-# clear
-# neofetch
+clear
+neofetch
