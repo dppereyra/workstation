@@ -13,7 +13,7 @@ alias mystation="git --git-dir=$HOME/.station --work-tree=$HOME"
 alias asdf-la="asdf list all"
 alias asdf-pa="asdf plugin add"
 
-alias cat="pygmentize -f terminal256 -g -P style=paraiso-dark";
+alias show="pygmentize -f terminal256 -g -P style=paraiso-dark";
 
 alias aria2c='aria2c -x 10 -s 10'
 alias wget="wget -c"
