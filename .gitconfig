@@ -1,5 +1,6 @@
 [core]
 excludesfile = ~/station/global_gitignore
+pager = delta
 
 [filter "lfs"]
 required = true
@@ -12,3 +13,20 @@ defaultBranch = master
 
 [pull]
 rebase = false
+
+[interactive]
+difffilter = delta --color-only
+
+[add.interactive]
+useBuiltin = false
+
+[delta]
+navigate = true
+light = false
+
+[merge]
+conflictstyle = diff3
+
+[diff]
+colorMoved = default
+
