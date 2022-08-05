@@ -23,3 +23,4 @@ export ZSH_DISABLE_COMPFIX=true
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 
 export ZINIT_HOME=~/station/zinit
+
