@@ -4,9 +4,9 @@ pager = delta
 
 [filter "lfs"]
 required = true
-clean = git-lfs clean -- %f
-smudge = git-lfs smudge -- %f
-process = git-lfs filter-process
+clean    = git-lfs clean -- %f
+smudge   = git-lfs smudge -- %f
+process  = git-lfs filter-process
 
 [init]
 defaultBranch = master
@@ -21,8 +21,10 @@ difffilter = delta --color-only
 useBuiltin = false
 
 [delta]
-navigate = true
-light = false
+navigate     = true
+light        = false
+side-by-side = true
+line-numbers = true
 
 [merge]
 conflictstyle = diff3
