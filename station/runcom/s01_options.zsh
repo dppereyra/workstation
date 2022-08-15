@@ -17,9 +17,9 @@ setopt MENUCOMPLETE
 setopt globdots pushdtohome cdablevars autolist noautocd
 setopt recexact longlistjobs
 setopt autoresume histignoredups pushdsilent nomatch
-setopt autopushd pushdminus extendedglob rcquotes mailwarning
+setopt autopushd pushdminus rcquotes mailwarning
 
-unsetopt bgnice autoparamslash beep notify
+unsetopt bgnice autoparamslash beep notify extendedglob
 
 autoload colors zsh/terminfo
 
