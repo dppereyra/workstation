@@ -1,3 +1,3 @@
 update-system() {
-  sudo dnf update -y
+  sudo dnf update -y --refresh
 }
