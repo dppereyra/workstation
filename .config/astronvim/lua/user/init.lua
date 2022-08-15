@@ -18,7 +18,7 @@ local config = {
   },
 
   -- Set colorscheme
-  colorscheme = "base16-atelier-lakeside-light",
+  colorscheme = "base16-blueforest",
 
   -- Override highlight groups in any theme
   highlights = {
