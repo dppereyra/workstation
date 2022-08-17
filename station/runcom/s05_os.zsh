@@ -22,26 +22,32 @@ then
   case "$STATION_DISTRO" in
     *arch*)
       echo "Loading arch specific configs ..."
+      export NEOFETCH_DISTRO="Arch"
       source $STATION_RC/system/distro/arch.zsh
     ;;
     *arcolinux*)
       echo "Loading arch specific configs ..."
+      export NEOFETCH_DISTRO="Arch"
       source $STATION_RC/system/distro/arch.zsh
     ;;
     *debian*)
       echo "Loading debian specific configs ..."
+      export NEOFETCH_DISTRO="Debian"
       source $STATION_RC/system/distro/debian.zsh
     ;;
     *fedora*)
       echo "Loading fedora specific configs ..."
+      export NEOFETCH_DISTRO="Fedora"
       source $STATION_RC/system/distro/fedora.zsh
     ;;
     *nobara*)	
       echo "Loading fedora specific configs ..."
+      export NEOFETCH_DISTRO="Fedora"
       source $STATION_RC/system/distro/fedora.zsh
     ;;
     *)
       echo "No OS specific configs loaded ..."
+      export NEOFETCH_DISTRO="Linux"
       ;;
   esac
 fi
