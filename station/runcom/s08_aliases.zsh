@@ -11,7 +11,7 @@ echo "Loading aliases ..."
 alias mystation="git --git-dir=$HOME/.station --work-tree=$HOME"
 alias mystation-tui="lazygit --git-dir=$HOME/.station --work-tree=$HOME"
 
-alias vi=nvim
+alias vi=/usr/bin/nvim
 
 alias asdf-la="asdf list all"
 alias asdf-pa="asdf plugin add"
