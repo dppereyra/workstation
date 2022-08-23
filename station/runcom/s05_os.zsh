@@ -27,8 +27,13 @@ then
     ;;
     *arcolinux*)
       echo "Loading arch specific configs ..."
-      export NEOFETCH_DISTRO="Arch"
+      export NEOFETCH_DISTRO="ArcoLinux"
       source $STATION_RC/system/distro/arch.zsh
+    ;;
+    *garuda*)
+      echo "Loading garuda specific configs ..."
+      export NEOFETCH_DISTRO="Garuda"
+      source $STATION_RC/system/distro/garuda.zsh
     ;;
     *debian*)
       echo "Loading debian specific configs ..."
