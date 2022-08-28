@@ -15,8 +15,12 @@ fpath=(${ASDF_DIR}/completions $fpath)
 echo "Loading pipx completions ..."
 eval "$(register-python-argcomplete pipx)"
 
-echo "Loading kubectl completions ..."
-source <(kubectl completion zsh)
+if [[ -x "`which kubectl`" ]]; then
+  echo "Loading kubectl completions ..."
+  source <(kubectl completion zsh)
+else
+  notify-send "No kubectl detected ..." || :
+fi
 
 echo "Loading pyenv ..."
 eval "$(pyenv init --path)"
@@ -32,12 +36,18 @@ eval "$(nodenv init -)"
 echo "Loading rbenv ..."
 eval "$(rbenv init -)"
 
-echo "Loading npm completions ..."
-source <(npm completion)
+if [ -x "`which npm`" ]; then
+  echo "Loading npm completions ..."
+  source <(npm completion)
+else
+  notify-send "No npm detected ..." || :
+fi
 
 if [ -x "`which doctl`" ]; then
-  echo "Loading cloud completions ..."
+  echo "Loading digitalocean completions ..."
   source <(doctl completion zsh)
+else
+  notify-send "No doctl detected ..." || :
 fi
 
 
@@ -45,9 +55,14 @@ if [ -d $STATION_SDK/google-cloud-sdk ]; then
   echo "Loading Google SDK ..."
   source $STATION_SDK/google-cloud-sdk/path.zsh.inc
   source $STATION_SDK/google-cloud-sdk/completion.zsh.inc
+else
+  notify-send "No google sdk detected ..." || :
 fi
 
 if [ -d $FLUTTER_BIN ]; then
   echo "Loading flutter completions ..."
   source <(flutter zsh-completion)
+else
+  notify-send "No flutter sdk detected ..." || :
 fi
+
