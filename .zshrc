@@ -24,7 +24,12 @@ source $STATION_RC/s98_secrets.zsh
 
 source $STATION_RC/s99_theme.zsh
 
-clear
-neofetch --ascii_distro $NEOFETCH_DISTRO
+if [[ -v NEOFETCH_DISTRO ]]
+then
+  neofetch --ascii_distro $NEOFETCH_DISTRO
+else
+  neofetch
+fi
+
 fortune | cowsay -f small | lolcat
 
