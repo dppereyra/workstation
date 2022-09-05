@@ -15,7 +15,6 @@ if [[ "$OSTYPE" == *"linux-gnu"* || "$OSTYPE" == *"fc"* ]]
 then
   if [[ "$STATION_KERNEL" == *wsl2* ]]
   then
-    echo "Loading wsl configs ..."
     source $STATION_RC/system/wsl.zsh
   fi
 
