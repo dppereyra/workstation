@@ -9,10 +9,8 @@ After=sound.target
 
 [Service]
 Environment=MOPIDY_CONF=~/.config/mopidy/main.conf
-Environment=MOPIDY_CONF_DIR=~/.config/mopidy/conf.d/*.conf
-Environment=MOPIDY_AUTH_DIR=~/.config/auth.d/*.conf
 ExecStart=/bin/mopidy \
-  --config ${MOPIDY_CONF_DIR}:${MOPIDY_AUTH_DIR}:${MOPIDY_CONF}
+  --config ${MOPIDY_CONF}
 
 [Install]
 WantedBy=default.target
