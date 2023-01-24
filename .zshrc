@@ -31,5 +31,5 @@ else
   neofetch
 fi
 
-fortune | cowsay -f small | lolcat
+fortune | cowsay -f small
 
