@@ -7,7 +7,6 @@ winPaths=(
   "/mnt/c/Windows/System32/Wbem"
   "/mnt/c/Program Files/Microsoft VS Code/bin"
   "/mnt/c/opt/bin"
-  "/mnt/c/users/pereyde/scoop/apps/rancher-desktop/current/resources/resources/linux/bin"
 )
 
 for winPath in $winPaths
@@ -19,4 +18,4 @@ export XDG_CONFIG_HOME=~/.config
 
 export VAGRANT_DEFAULT_PROVIDER=hyperv
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
-export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="/mnt/c/projects"
+# export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="/mnt/d/projects"
