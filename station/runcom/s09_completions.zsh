@@ -19,7 +19,7 @@ if [[ -x "`which kubectl`" ]]; then
   echo "Loading kubectl completions ..."
   source <(kubectl completion zsh)
 else
-  notify-send "No kubectl detected ..." || :
+  notify-send "Missing command" "No kubectl detected ..." || :
 fi
 
 echo "Loading pyenv ..."
@@ -40,14 +40,14 @@ if [ -x "`which npm`" ]; then
   echo "Loading npm completions ..."
   source <(npm completion)
 else
-  notify-send "No npm detected ..." || :
+  notify-send "Missing command" "No npm detected ..." || :
 fi
 
 if [ -x "`which doctl`" ]; then
   echo "Loading digitalocean completions ..."
   source <(doctl completion zsh)
 else
-  notify-send "No doctl detected ..." || :
+  echo "No doctl detected ..." || :
 fi
 
 
@@ -56,13 +56,12 @@ if [ -d $STATION_SDK/google-cloud-sdk ]; then
   source $STATION_SDK/google-cloud-sdk/path.zsh.inc
   source $STATION_SDK/google-cloud-sdk/completion.zsh.inc
 else
-  notify-send "No google sdk detected ..." || :
+  notify-send "Missing command" "No google sdk detected ..." || :
 fi
 
 if [ -d $FLUTTER_BIN ]; then
   echo "Loading flutter completions ..."
   source <(flutter zsh-completion)
 else
-  notify-send "No flutter sdk detected ..." || :
+  notify-send "Missing command" "No flutter sdk detected ..." || :
 fi
-
