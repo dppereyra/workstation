@@ -41,6 +41,7 @@ zinit snippet OMZ::plugins/pyenv
 
 # Cloud Services
 zinit snippet OMZ::plugins/aws
+zinit snippet OMZ::plugins/azure
 zinit snippet OMZ::plugins/doctl
 zinit snippet OMZ::plugins/gcloud
 
