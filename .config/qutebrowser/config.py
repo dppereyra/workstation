@@ -2,36 +2,35 @@
 config.load_autoconfig()
 
 DUMMY_USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/77.0'
+DEFAULT_FONT_FACE = 'VictorMono Nerd Font'
 DEFAULT_FONT_SIZE = '13pt'
-DEFAULT_FONT = 'monospace'
+DEFAULT_FONT_STRING = f'{DEFAULT_FONT_SIZE} {DEFAULT_FONT_FACE}'
 JS_CONFIG = 'content.javascript.enabled'
+FIVE_MINUTES = 5 * 60 * 1000
 
-config.set(JS_CONFIG, True, 'file://*')
-config.set(JS_CONFIG, True, 'chrome://*/*')
-config.set(JS_CONFIG, True, 'qute://*/*')
+MOD_JS_CONFIG_LIST = [
+    'file://*', 'chrome://*/*', 'qute://*/*'
+]
 
-# config.set(
-#     'content.headers.user_agent',
-#     DUMMY_USER_AGENT,
-#     'https://accounts.google.com/*'
-# )
+for js_config_item in MOD_JS_CONFIG_LIST:
+    config.set(JS_CONFIG, True, js_config_item)
 
-c.fonts.downloads        = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
-c.fonts.hints            = 'bold ' + DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
-c.fonts.keyhint          = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
-c.fonts.messages.error   = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
-c.fonts.messages.info    = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
-c.fonts.messages.warning = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
-c.fonts.messages.error   = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
-c.fonts.prompts          = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT_SIZE + ' sans-serif'
-c.fonts.statusbar        = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
-c.fonts.tabs             = DEFAULT_FONT_SIZE + ' ' + DEFAULT_FONT
+c.fonts.downloads        = f'{DEFAULT_FONT_STRING}'
+c.fonts.hints            = f'bold {DEFAULT_FONT_STRING}'
+c.fonts.keyhint          = f'{DEFAULT_FONT_STRING}'
+c.fonts.messages.error   = f'{DEFAULT_FONT_STRING}'
+c.fonts.messages.info    = f'{DEFAULT_FONT_STRING}'
+c.fonts.messages.warning = f'{DEFAULT_FONT_STRING}'
+c.fonts.prompts          = f'{DEFAULT_FONT_STRING}, {DEFAULT_FONT_SIZE} sans-serif'
+c.fonts.statusbar        = f'{DEFAULT_FONT_STRING}'
 
 c.downloads.location.directory = '~/downloads'
 c.downloads.location.prompt = False
 
 c.url.default_page = "https://www.ecosia.org"
 c.url.start_pages  = "https://www.ecosia.org"
+
+c.qt.highdpi = True
 
 c.url.searchengines = {
     "DEFAULT": "https://www.ecosia.org/search?q={}",
@@ -47,9 +46,11 @@ c.url.searchengines = {
 
 c.scrolling.bar = 'always'
 
-c.auto_save.interval= 5 * 60 * 1000
+c.auto_save.interval= FIVE_MINUTES
 c.auto_save.session = True
 
-# c.content.host_blocking.whitelist = [
-#     "*.google.com"
-# ]
+# config.set(
+#     'content.headers.user_agent',
+#     DUMMY_USER_AGENT,
+#     'https://accounts.google.com/*'
+# )
