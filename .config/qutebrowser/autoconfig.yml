@@ -7,4 +7,9 @@
 config_version: 2
 settings:
   content.notifications.enabled:
+    https://mail.google.com: false
+    https://www.facebook.com: false
     https://www.reddit.com: false
+    https://www.youtube.com: false
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: false
