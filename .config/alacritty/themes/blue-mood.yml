@@ -1,0 +1,27 @@
+# Blue Mood by Nelson Loyola and Syohei Yoshida
+---
+colors:
+  primary:
+    background: '0x104e8b'
+    foreground: '0xf5f5f5'
+
+  normal:
+    black:   '0x000000'
+    red:     '0xff0000'
+    green:   '0x7fff00'
+    yellow:  '0xffd700'
+    blue:    '0x235c94'
+    magenta: '0x4f94cd'
+    cyan:    '0xf5deb3'
+    white:   '0xbfbfbf'
+
+  bright:
+    black:   '0x4d4d4d'
+    red:     '0xff6347'
+    green:   '0x7fff00'
+    yellow:  '0xffff00'
+    blue:    '0x00cdcd'
+    magenta: '0x00ffff'
+    cyan:    '0xf5deb3'
+    white:   '0xf5f5f5'
+
