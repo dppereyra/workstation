@@ -21,6 +21,7 @@ export ASDF_DIR=$STATION_HOME/asdf
 export ASDF_BIN=~/.asdf/bin
 export CARGO_BIN=~/.cargo/bin
 export LOCAL_BIN=~/.local/bin
+export ARKADE_BIN=~/.arkade/bin
 
 export GCLOUD_BIN=$STATION_SDK/google-cloud-sdk/bin
 export FLUTTER_BIN=$STATION_SDK/flutter/bin
