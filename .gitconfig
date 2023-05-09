@@ -32,3 +32,6 @@ conflictstyle = diff3
 [diff]
 colorMoved = default
 
+[includeIf "gitdir:~/.station"]
+  path = ~/station/station.gitconfig
+
