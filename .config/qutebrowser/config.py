@@ -1,7 +1,7 @@
 # flake8: noqa
 config.load_autoconfig()
 
-DUMMY_USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/77.0'
+DUMMY_USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0'
 DEFAULT_FONT_FACE = 'VictorMono Nerd Font'
 DEFAULT_FONT_SIZE = '13pt'
 DEFAULT_FONT_STRING = f'{DEFAULT_FONT_SIZE} {DEFAULT_FONT_FACE}'
