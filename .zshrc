@@ -32,4 +32,3 @@ else
 fi
 
 fortune | cowsay -f small
-
