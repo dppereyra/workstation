@@ -7,7 +7,7 @@ if wezterm.config_builder then
 end
 
 -- config.color_scheme = 'Codeschool (light) (terminal.sexy)'
-config.color_scheme = 'Catppuccin Macchiato'
+config.color_scheme = 'Tomorrow Night Blue (Gogh)'
 
 config.font =
     wezterm.font('VictorMono Nerd Font', { weight = 'DemiBold' })

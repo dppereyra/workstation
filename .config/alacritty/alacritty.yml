@@ -11,4 +11,4 @@ import:
   - ~/.config/alacritty/inputs.yml
 
   # Load theme
-  - ~/.config/alacritty/themes/bluish.yml
+  - ~/.config/alacritty/themes/tomorrow-night-blue.yml
