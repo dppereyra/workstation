@@ -1,0 +1,30 @@
+# Tomorrow Night Blue by Chris Kempson
+---
+colors:
+  # Default colors
+  primary:
+    background: '0x002451'
+    foreground: '0xffffff'
+
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xff9da4'
+    green:   '0xd1f1a9'
+    yellow:  '0xffeead'
+    blue:    '0xbbdaff'
+    magenta: '0xebbbff'
+    cyan:    '0x99ffff'
+    white:   '0xffffff'
+
+  # Bright colors
+  bright:
+    black:   '0x000000'
+    red:     '0xff9da4'
+    green:   '0xd1f1a9'
+    yellow:  '0xffeead'
+    blue:    '0xbbdaff'
+    magenta: '0xebbbff'
+    cyan:    '0x99ffff'
+    white:   '0xffffff'
+
