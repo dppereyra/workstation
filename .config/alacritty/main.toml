@@ -1,0 +1,41 @@
+[cursor]
+blink_interval = 750
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[font]
+size = 15
+
+[font.bold]
+family = "Caskaydia"
+style = "Bold"
+
+[font.bold_italic]
+family = "Caskaydia"
+style = "Bold Italic"
+
+[font.italic]
+family = "Caskaydia"
+style = "Italic"
+
+[font.normal]
+family = "Caskaydia"
+style = "Regular"
+
+[scrolling]
+history = 50000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+decorations = "full"
+dynamic_padding = true
+dynamic_title = true
+opacity = 1.0
+startup_mode = "Windowed"
