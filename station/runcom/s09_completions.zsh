@@ -50,7 +50,6 @@ else
   notify-send "No doctl detected ..." || :
 fi
 
-
 if [ -d $STATION_SDK/google-cloud-sdk ]; then
   echo "Loading Google SDK ..."
   source $STATION_SDK/google-cloud-sdk/path.zsh.inc
@@ -66,3 +65,9 @@ else
   notify-send "No flutter sdk detected ..." || :
 fi
 
+if [ -x "`which zoxide`"]; then
+  echo "Loading zoxide completions ..."
+  eval "$(zoxide init zsh)"
+else
+  notify-send "No zoxide detected ..." || :
+fi
