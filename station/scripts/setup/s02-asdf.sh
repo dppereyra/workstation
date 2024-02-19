@@ -2,7 +2,7 @@
 
 set -e
 
-ASDF_VERSION=v0.13.1
+ASDF_VERSION=v0.14.0
 
 STATION_HOME=~/station
 
