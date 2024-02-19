@@ -8,11 +8,15 @@
 
 echo "Determining os ..."
 
-STATION_KERNEL=$(uname -a | awk '{print $3}' | tr '[:upper:]' '[:lower:]')
-STATION_DISTRO=$(awk -F= '/^NAME/{print $2}' /etc/os-release | tr '[:upper:]' '[:lower:]')
-
-if [[ "$OSTYPE" == *"linux-gnu"* || "$OSTYPE" == *"fc"* ]]
+if [[ "$OSTYPE" == *"darwin"* ]]
 then
+  source $STATION_RC/system/apple.zsh
+elif [[ "$OSTYPE" == *"linux-gnu"* || "$OSTYPE" == *"fc"* ]]
+then
+
+  STATION_KERNEL=$(uname -a | awk '{print $3}' | tr '[:upper:]' '[:lower:]')
+  STATION_DISTRO=$(awk -F= '/^NAME/{print $2}' /etc/os-release | tr '[:upper:]' '[:lower:]')
+
   if [[ "$STATION_KERNEL" == *wsl2* ]]
   then
     source $STATION_RC/system/wsl.zsh
@@ -27,10 +31,6 @@ then
       echo "Loading arch specific configs ..."
       source $STATION_RC/system/distro/arch.zsh
     ;;
-    *garuda*)
-      echo "Loading garuda specific configs ..."
-      source $STATION_RC/system/distro/garuda.zsh
-    ;;
     *endeavouros*)
       echo "Loading endeavour specific configs ..."
       source $STATION_RC/system/distro/arch.zsh
@@ -41,11 +41,6 @@ then
     ;;
     *fedora*)
       echo "Loading fedora specific configs ..."
-      source $STATION_RC/system/distro/fedora.zsh
-    ;;
-    *nobara*)	
-      echo "Loading fedora specific configs ..."
-      export NEOFETCH_DISTRO="Fedora"
       source $STATION_RC/system/distro/fedora.zsh
     ;;
     *)
