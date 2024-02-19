@@ -12,7 +12,7 @@ config.color_scheme = 'Tomorrow Night Blue (Gogh)'
 config.font =
     wezterm.font('VictorMono Nerd Font', { weight = 'DemiBold' })
 
-config.font_size = 12.0
+config.font_size = 14.0
 
 config.launch_menu = {
   {
