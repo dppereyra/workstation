@@ -15,3 +15,9 @@ update-mirrors() {
     --connection-timeout 30 \
     --save /etc/pacman.d/mirrorlist
 }
+
+alias pacman='sudo pacman --color auto'
+alias pac-recent="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -100"
+alias pac-cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias pac-unlock="sudo rm /var/lib/pacman/db.lck"
+alias yayskip='yay -S --mflags --skipinteg'
