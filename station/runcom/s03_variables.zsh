@@ -24,3 +24,9 @@ export VAGRANT_DEFAULT_PROVIDER=libvirt
 
 export ZINIT_HOME=~/station/zinit
 
+if [[ ! -f $STATION_RC/s98_secrets.zsh ]]
+then
+  cp $STATION_RC/s98_secrets.sample.zsh $STATION_RC/s98_secrets.zsh
+fi
+
+source $STATION_RC/s98_secrets.zsh

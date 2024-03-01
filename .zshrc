@@ -5,8 +5,6 @@
 ##############################################################################
 
 echo "Using generic locale ..."
-export LC_ALL=en_PH.UTF-8
-
 export STATION_HOME=~/station
 export STATION_RC=$STATION_HOME/runcom
 
@@ -20,8 +18,6 @@ source $STATION_RC/s07_terminal.zsh
 source $STATION_RC/s08_aliases.zsh
 source $STATION_RC/s09_completions.zsh
 source $STATION_RC/s10_zinit.zsh
-source $STATION_RC/s98_secrets.zsh
-
 source $STATION_RC/s99_theme.zsh
 
 if [[ -v NEOFETCH_DISTRO ]]
@@ -32,3 +28,5 @@ else
 fi
 
 fortune | cowsay -f small
+
+# eval "$(atuin init zsh)"
