@@ -1,7 +1,13 @@
 station-edit() {
   case "$1" in
-    *)
-      TARGET=$STATION_HOME/config
+    "zellij")
+      TARGET=~/.config/zellij
+      ;;
+    "nvim")
+      TARGET=~/.config/nvim
+      ;;
+    "runcom")
+      TARGET=$STATION_HOME/runcom
   esac
   $EDITOR $TARGET
 }
