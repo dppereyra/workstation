@@ -35,6 +35,9 @@ colorMoved = default
 [includeIf "gitdir:~/.station"]
   path = ~/station/station.gitconfig
 
-[user]
-	name = DPPereyra
-	email = mail@dppereyra.me
+[includeIf "gitdir:~/work/"]
+  path = ~/station/work.gitconfig
+
+[includeIf "gitdir:~/personal"]
+  path = ~/station/personal.gitconfig
+
