@@ -8,6 +8,8 @@
 
 echo "Loading secrets ..."
 
+export LC_ALL="en_PH.UTF-8"
+
 export RESTIC_REPOSITORY=
 export RESTIC_PASSWORD_FILE=
 
