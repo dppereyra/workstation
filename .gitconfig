@@ -41,3 +41,12 @@ colorMoved = default
 [includeIf "gitdir:~/personal"]
   path = ~/station/personal.gitconfig
 
+[alias]
+	append = town append
+	diff-parent = town diff-parent
+	hack = town hack
+	prepend = town prepend
+	propose = town propose
+	set-parent = town set-parent
+	ship = town ship
+	sync = town sync
