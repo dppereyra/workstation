@@ -16,6 +16,12 @@ update-mirrors() {
     --save /etc/pacman.d/mirrorlist
 }
 
+update-all() {
+  update-mirrors
+  update-system
+  update-envs
+}
+
 alias pacman='sudo pacman --color auto'
 alias pac-recent="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -100"
 alias pac-cleanup='sudo pacman -Rns $(pacman -Qtdq)'

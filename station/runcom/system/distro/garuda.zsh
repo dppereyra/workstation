@@ -16,3 +16,9 @@ update-mirrors() {
     --connection-timeout 30 \
     --save /etc/pacman.d/mirrorlist
 }
+
+update-all() {
+  update-mirrors
+  update-system
+  update-envs
+}
