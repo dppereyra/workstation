@@ -30,6 +30,7 @@ zinit snippet OMZ::plugins/ssh-agent
 # Applications
 zinit snippet OMZ::plugins/paver
 zinit snippet OMZ::plugins/taskwarrior
+zinit snippet OMZ::plugins/zoxide
 
 # Envs
 zinit snippet OMZ::plugins/asdf
@@ -38,6 +39,8 @@ zinit snippet OMZ::plugins/pyenv
 # Virtualization / Containerization
 # zinit snippet OMZP::docker/_docker
 # zinit snippet OMZ::plugins/lxd
+zinit snippet OMZ::plugins/istioctl
+zinit snippet OMZ::plugins/vagrant
 
 # Cloud Services
 zinit snippet OMZ::plugins/aws
