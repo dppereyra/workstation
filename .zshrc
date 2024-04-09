@@ -28,5 +28,3 @@ else
 fi
 
 fortune | cowsay -f small
-
-# eval "$(atuin init zsh)"
