@@ -24,6 +24,7 @@ export LOCAL_BIN=~/.local/bin
 export ARKADE_BIN=~/.arkade/bin
 export MODULAR_HOME=~/.modular
 export MOJO_BIN=$MODULAR_HOME/pkg/packages.modular.com_mojo/bin
+export RADICLE_BIN=~/.radicle/bin
 
 export GCLOUD_BIN=$STATION_SDK/google-cloud-sdk/bin
 export FLUTTER_BIN=$STATION_SDK/flutter/bin
@@ -49,5 +50,5 @@ export GO_BIN=$GOPATH/bin
 export PNPM_HOME=$STATION_HOME/pnpm
 
 export ENV_PATHS=$ASDF_BIN:$PYENV_BIN:$GOENV_BIN:$NODENV_BIN:$RBENV_BIN:$PNPM_HOME
-export APP_PATHS=$GO_BIN:$CARGO_BIN:$NPM_BIN:$FLUTTER_BIN:$GCLOUD_BIN:$MOJO_BIN
+export APP_PATHS=$GO_BIN:$CARGO_BIN:$NPM_BIN:$FLUTTER_BIN:$GCLOUD_BIN:$MOJO_BIN:$RADICLE_BIN:$ARKADE_BIN
 export PATH=$ENV_PATHS:$APP_PATHS:$STATION_SCRIPTS:$STATION_BIN:$LOCAL_BIN:$PATH
