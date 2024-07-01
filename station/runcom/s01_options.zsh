@@ -10,7 +10,9 @@ echo "Configuring zsh options ..."
 
 setopt INC_APPEND_HISTORY SHARE_HISTORY
 setopt APPEND_HISTORY
-setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+# setopt EXTENDED_HISTORY
 setopt MENUCOMPLETE
 # setopt ALL_EXPORT
 
