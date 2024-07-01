@@ -65,3 +65,9 @@ if [[ -x $(which zoxide) ]]; then
   echo "Loading zoxide completions ..."
   source <(zoxide init zsh)
 fi
+
+echo "Checking for colima ..."
+if [[ -x $(which colima) ]]; then
+  echo "Loading colima completions ..."
+  source <(colima completion zsh)
+fi
