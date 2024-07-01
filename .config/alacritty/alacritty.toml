@@ -4,5 +4,5 @@ import = [
   "~/.config/alacritty/environment.toml",
   "~/.config/alacritty/main.toml",
   "~/.config/alacritty/inputs.toml",
-  "~/.config/alacritty/themes/bluish.toml",
+  "~/.config/alacritty/themes/tomorrow-night-blue.toml",
 ]
