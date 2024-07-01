@@ -35,10 +35,10 @@ colorMoved = default
 [includeIf "gitdir:~/.station"]
   path = ~/station/station.gitconfig
 
-[includeIf "gitdir:~/work/"]
+[includeIf "gitdir:~/projects/work/"]
   path = ~/station/work.gitconfig
 
-[includeIf "gitdir:~/personal"]
+[includeIf "gitdir:~/projects/personal"]
   path = ~/station/personal.gitconfig
 
 [alias]
