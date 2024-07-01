@@ -4,7 +4,7 @@ export HOMEBREW_PATH=/opt/homebrew/bin
 export OPENJDK_BIN=/opt/homebrew/opt/openjdk@17/bin
 export RANCHER_BIN=$HOME/.rd/bin
 
-export PATH=$HOMEBREW_PATH:$RANCHER_BIN:$OPENJDK_BIN:$PATH
+export PATH=$PATH:$HOMEBREW_PATH:$RANCHER_BIN:$OPENJDK_BIN
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
