@@ -6,7 +6,7 @@ This is a repository of all my dotfiles and configs
 
 ```bash
 git clone --bare $REPO_URL $HOME/.station
-alias mystation='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias mystation='git --git-dir=$HOME/.station/ --work-tree=$HOME'
 mystation checkout
 ```
 
