@@ -22,9 +22,9 @@ source $STATION_RC/s99_theme.zsh
 
 if [[ -v NEOFETCH_DISTRO ]]
 then
-  neofetch --ascii_distro $NEOFETCH_DISTRO
+  fastfetch --ascii_distro $NEOFETCH_DISTRO
 else
-  neofetch
+  fastfetch
 fi
 
 fortune | cowsay -f small
