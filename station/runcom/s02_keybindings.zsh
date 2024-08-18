@@ -11,13 +11,30 @@ echo "Configuring key bindings ..."
 bindkey -e
 # bindkey -v
 
+# This is the delete key for most cases
 bindkey '^[[3~' delete-char
 
-# bindkey '^[[H'  beginning-of-line
-# bindkey '^[[7~' beginning-of-line
+if [ "$TERM_PROGRAM" = tmux ]; then
+  echo "Detected tmux session ..."
+  echo "Setting keybindings for tmux ..."
+  bindkey '^[[1~' beginning-of-line
+  bindkey '^[[4~' end-of-line
+else
+  bindkey '^[[H' beginning-of-line
+  bindkey '^[[F' end-of-line
+fi
 
+# This is the home key for most terminals
+# bindkey '^[[H'  beginning-of-line
+
+# This is the home key for most tmux setups
+# bindkey '^[[1~' beginning-of-line
+
+# This is the end key for most terminals
 # bindkey '^[[F'  end-of-line
-# bindkey '^[[8~' end-of-line
+
+# This is the end key for most tmux setups
+# bindkey '^[[4~' end-of-line
 
 # Use vim keys in tab complete menu:
 # bindkey -v '^?' backward-delete-char
