@@ -9,8 +9,11 @@ global:
 default:
   backup:
     exclude-caches: true
+    exclude-file: ~/.config/resticprofile/exclude.list
     schedule: "*-*-* 15:00:00"
     source:
+      - "~/documents"
+      - "~/pictures"
       - "~/projects"
       - "~/.config"
   retention:
