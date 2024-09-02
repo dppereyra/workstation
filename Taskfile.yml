@@ -1,0 +1,9 @@
+---
+version: "3"
+
+tasks:
+  backup-station:
+    cmds:
+      - resticprofile backup
+
+
