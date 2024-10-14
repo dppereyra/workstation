@@ -33,20 +33,20 @@ conflictstyle = diff3
 colorMoved = default
 
 [includeIf "gitdir:~/.station"]
-  path = ~/station/station.gitconfig
+path = ~/station/station.gitconfig
 
 [includeIf "gitdir:~/projects/work/"]
-  path = ~/station/work.gitconfig
+path = ~/station/work.gitconfig
 
 [includeIf "gitdir:~/projects/personal"]
-  path = ~/station/personal.gitconfig
+path = ~/station/personal.gitconfig
 
 [alias]
-	append = town append
-	diff-parent = town diff-parent
-	hack = town hack
-	prepend = town prepend
-	propose = town propose
-	set-parent = town set-parent
-	ship = town ship
-	sync = town sync
+append = town append
+diff-parent = town diff-parent
+hack = town hack
+prepend = town prepend
+propose = town propose
+set-parent = town set-parent
+ship = town ship
+sync = town sync

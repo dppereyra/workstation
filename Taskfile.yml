@@ -5,5 +5,18 @@ tasks:
   backup-station:
     cmds:
       - resticprofile backup
-
+  update-all:
+    cmds:
+      - update-envs
+      - sudo pacman -Syu
+      - yay -Syu --aur
+  clean-all-py:
+    cmds:
+      - rm -rf .coverage
+      - rm -rf .pytest_cache
+      - rm -rf .tox
+      - rm -rf .pdm-build
+      - find . -type d -name "__pycache__" -exec rm -rf {} +
+      - find . | grep -E "(__pycache__|\.pyc|\.pyo|\.egg-info$)" | xargs rm -rf
+      - rm -rf .eggs
 
