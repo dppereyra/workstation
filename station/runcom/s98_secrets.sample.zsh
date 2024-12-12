@@ -24,8 +24,8 @@ export SNYK_TOKEN=
 # https://keys.pub
 export KEYS_AUTH=
 
-export CA_FILE=
-export REQUESTS_CA_BUNDLE=
+# export CA_FILE=
+# export REQUESTS_CA_BUNDLE=
 
 export JIRA_API_TOKEN=
 
