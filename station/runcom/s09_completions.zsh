@@ -12,9 +12,6 @@ echo "Loading asdf completions ..."
 source $ASDF_DIR/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
 
-echo "Loading pipx completions ..."
-eval "$(register-python-argcomplete pipx)"
-
 echo "Checking for kubectl ..."
 if [[ -x "`which kubectl`" ]]; then
   echo "Loading kubectl completions ..."

@@ -12,6 +12,9 @@ alias merge="xrdb -merge ~/.Xresources"
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
+echo "Loading pipx completions ..."
+eval "$(register-python-argcomplete pipx)"
+
 if [[ "$STATION_KERNEL" == *wsl2* ]]
 then
   source $STATION_RC/system/wsl.zsh
