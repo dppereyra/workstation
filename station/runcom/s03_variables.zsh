@@ -18,7 +18,6 @@ export HISTFILE=~/station/zsh_history
 export HISTSIZE=200000
 export SAVEHIST=100000
 
-export VAGRANT_DEFAULT_PROVIDER=libvirt
 export PYTHONWARNINGS="ignore:Unverified HTTPS request"
 
 export ZINIT_HOME="~/station/zinit"
