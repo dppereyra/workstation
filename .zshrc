@@ -4,7 +4,6 @@
 #
 ##############################################################################
 
-echo "Using generic locale ..."
 export STATION_HOME=~/station
 export STATION_RC=$STATION_HOME/runcom
 
@@ -28,3 +27,4 @@ else
 fi
 
 fortune | cowsay -f small
+
