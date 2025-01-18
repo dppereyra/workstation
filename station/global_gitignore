@@ -32,3 +32,6 @@ codealike.json
 .Trash-*
 .nfs*
 
+# Env files
+.env
+
