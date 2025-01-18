@@ -32,6 +32,9 @@ eval "$(nodenv init -)"
 echo "Loading rbenv ..."
 eval "$(rbenv init -)"
 
+echo "Loading phpenv ..."
+eval "$(phpenv init -)"
+
 echo "Checking for npm ..."
 if [[ -x "`which npm`" ]]; then
   echo "Loading npm completions ..."
