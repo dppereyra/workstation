@@ -45,7 +45,7 @@ zinit snippet OMZ::plugins/vagrant
 # Cloud Services
 zinit snippet OMZ::plugins/aws
 zinit snippet OMZ::plugins/azure
-zinit snippet OMZ::plugins/doctl
+# zinit snippet OMZ::plugins/doctl
 zinit snippet OMZ::plugins/gcloud
 
 # Deployments
