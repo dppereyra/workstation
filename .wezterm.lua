@@ -10,7 +10,7 @@ end
 config.color_scheme = 'Tomorrow Night Blue (Gogh)'
 
 config.font =
-    wezterm.font('Maple Mono SC NF', { weight = 'DemiBold' })
+    wezterm.font('Maple Mono NF', { weight = 'DemiBold' })
 
 config.font_size = 14.0
 
