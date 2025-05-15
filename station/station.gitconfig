@@ -1,4 +1,6 @@
 [user]
-name = "DPPereyra"
-email = "mail@dppereyra.me"
+name  = "DPPereyra"
+email = "mail@dppereyra.com"
 
+[status]
+showuntrackedfiles = no
