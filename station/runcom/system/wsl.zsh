@@ -7,7 +7,7 @@ winPaths=(
   "/mnt/c/Windows/System32/Wbem"
   "/mnt/c/Program Files/Microsoft VS Code/bin"
   "/mnt/c/opt/bin"
-  "/mnt/c/users/pereyde/scoop/apps/rancher-desktop/current/resources/resources/linux/bin"
+  "/mnt/c/users/DennisPereyra/scoop/shims"
 )
 
 for winPath in $winPaths
