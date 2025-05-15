@@ -33,7 +33,7 @@ zinit snippet OMZ::plugins/taskwarrior
 zinit snippet OMZ::plugins/zoxide
 
 # Envs
-zinit snippet OMZ::plugins/asdf
+# zinit snippet OMZ::plugins/asdf
 zinit snippet OMZ::plugins/pyenv
 
 # Virtualization / Containerization

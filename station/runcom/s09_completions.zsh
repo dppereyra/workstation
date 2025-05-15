@@ -8,9 +8,11 @@
 
 echo "Loading completions ..."
 
-echo "Loading asdf completions ..."
-source $ASDF_DIR/asdf.sh
-fpath=(${ASDF_DIR}/completions $fpath)
+echo "Checking for asdf ..."
+if [[ -x "`which asdf`" ]]; then
+  echo "Loading asdf completions ..."
+  source <(asdf completion zsh)
+fi
 
 echo "Checking for kubectl ..."
 if [[ -x "`which kubectl`" ]]; then
@@ -32,8 +34,8 @@ eval "$(nodenv init -)"
 echo "Loading rbenv ..."
 eval "$(rbenv init -)"
 
-echo "Loading phpenv ..."
-eval "$(phpenv init -)"
+# echo "Loading phpenv ..."
+# eval "$(phpenv init -)"
 
 echo "Checking for npm ..."
 if [[ -x "`which npm`" ]]; then

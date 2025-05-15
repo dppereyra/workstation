@@ -1,6 +1,6 @@
 asdf-ig() {
   asdf install $1 $2
-  asdf global $1 $2
+  asdf set $1 $2
 }
 
 asdf-pl() {

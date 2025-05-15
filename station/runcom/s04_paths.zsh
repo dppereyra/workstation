@@ -17,8 +17,8 @@ export STATION_SDK=$STATION_HOME/sdk
 
 export NPM_BIN=$STATION_HOME/npm/bin
 
-export ASDF_DIR=$STATION_HOME/asdf
-export ASDF_BIN=~/.asdf/bin
+export ASDF_DATA_DIR=~/.asdf
+export ASDF_BIN=$ASDF_DATA_DIR/shims
 export CARGO_BIN=~/.cargo/bin
 export LOCAL_BIN=~/.local/bin
 export ARKADE_BIN=~/.arkade/bin
