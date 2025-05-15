@@ -13,9 +13,8 @@ fi
 
 echo "Loading terminal utilities ..."
 source $STATION_HOME/zinit/zinit.zsh
-autoload -Uz compinit
 autoload -Uz _zinit
-compinit -u
+
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 echo "Loading bash compatibility ..."
