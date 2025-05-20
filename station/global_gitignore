@@ -35,3 +35,6 @@ codealike.json
 # Env files
 .env
 
+# Local Taskfile
+Taskfile.yml
+
